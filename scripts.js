@@ -36,7 +36,10 @@ request.onload = function (){
 
         });
     } else {
-        console.log('Error');
+        //console.log('Error');
+        const errorMessage = document.createElement('marquee');
+        errorMessage.textContent = `Gah, it's not working`;
+        app.appendChild(errorMessage);
     }
 }
 
